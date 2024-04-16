@@ -1,0 +1,46 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    color: #343a40;
+}
+
+#user-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn {
+    width: 120px; /* Ensuring buttons have a uniform width */
+}
+
+#videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.video-player {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#local-video-wrapper, #remote-video-wrapper {
+    position: relative;
+}
+
+#waiting {
+    display: none; /* Initially hidden, to be shown dynamically */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
